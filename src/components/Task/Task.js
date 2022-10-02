@@ -3,10 +3,13 @@ import React from 'react'
 const Task = () => {
     return (
         <div>
-            <li>
-                <p>fgfg</p>
-                <span>fgfgg</span>
-            </li>
+            <ul>Tasks
+                <li>
+                    <p>Task 1</p>
+                    <span>delete</span>
+                </li>
+            </ul>
+            
         </div>
     )
 }
