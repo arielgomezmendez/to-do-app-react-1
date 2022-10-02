@@ -1,13 +1,21 @@
-import './App.css';
+//import './App.css';
 import Form from './components/Form/Form';
 import Task from './components/Task/Task';
 
-function App() {
+
+
+function App({setTask}) {
+
+
   return (
     <div className="App">
       <Form/>
       <ul> Task list
-        <Task/>
+        {/*setTask === "task" &&
+          <Task
+          setTask={setTask}
+          />
+        */}
         
       </ul>
     </div>
