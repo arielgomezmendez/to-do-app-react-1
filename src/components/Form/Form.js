@@ -1,14 +1,17 @@
 import React from "react";
 import Button from "../Button/Button";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Form = ({ task, setTask }) => {
   const [input, setInput] = useState("");
+  
+  useEffect(() => {
+    console.log(task)
+  }, [task])
   const createTask = () => {
     if (input != "") {
-      //console.log(input);
       setTask([...task, input]);
-      console.log(task);
       setInput("");
     }
   };
@@ -23,7 +26,6 @@ const Form = ({ task, setTask }) => {
         <input
           placeholder="task"
           required
-          //onChange={(e) => setInput(e.target.value)}
           onChange={handleInput}
           value={input}
         ></input>
