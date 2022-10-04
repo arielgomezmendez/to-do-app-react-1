@@ -1,14 +1,11 @@
 import React from "react";
 
-const Task = () => {
+const Task = ({ task, setTask }) => {
   return (
     <div>
       <ul>
         Tasks
-        <li>
-          <p>Task 1</p>
-          <span>delete</span>
-        </li>
+        <li>{task}</li>
       </ul>
     </div>
   );
