@@ -13,7 +13,9 @@ const Form = ({ task, setTask }) => {
     }
   };
 
-  const handleInput = () => {};
+  const handleInput = (e) => {
+    setInput(e.target.value)
+  };
 
   return (
     <div>
@@ -21,7 +23,8 @@ const Form = ({ task, setTask }) => {
         <input
           placeholder="task"
           required
-          onChange={(e) => setInput(e.target.value)}
+          //onChange={(e) => setInput(e.target.value)}
+          onChange={handleInput}
           value={input}
         ></input>
 
