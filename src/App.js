@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>TODO APP</h1>
       <Form task={task} setTask={setTask} />
       {task.map((task)=>{
         return(
