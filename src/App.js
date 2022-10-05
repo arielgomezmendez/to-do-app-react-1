@@ -9,7 +9,12 @@ function App() {
   return (
     <div className="App">
       <Form task={task} setTask={setTask} />
-      <Task task={task} setTask={setTask}/>
+      {task.map((task)=>{
+        return(
+          <Task task={task} setTask={setTask} key={task}/>
+        )
+      })}
+      
     </div>
   );
 }

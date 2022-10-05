@@ -5,10 +5,11 @@ import { useEffect } from "react";
 
 const Form = ({ task, setTask }) => {
   const [input, setInput] = useState("");
-  
+
   useEffect(() => {
-    console.log(task)
-  }, [task])
+    console.log(task);
+  }, [task]);
+
   const createTask = () => {
     if (input != "") {
       setTask([...task, input]);
@@ -17,7 +18,7 @@ const Form = ({ task, setTask }) => {
   };
 
   const handleInput = (e) => {
-    setInput(e.target.value)
+    setInput(e.target.value);
   };
 
   return (
@@ -30,7 +31,7 @@ const Form = ({ task, setTask }) => {
           value={input}
         ></input>
 
-        <Button children="+" type="button" onClick={()=>createTask()} />
+        <Button children="+" type="button" onClick={() => createTask()} />
       </form>
     </div>
   );

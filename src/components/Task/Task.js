@@ -1,14 +1,7 @@
 import React from "react";
 
-const Task = ({ task, setTask }) => {
-  return (
-    <div>
-      <ul>
-        Tasks
-        <li>{task}</li>
-      </ul>
-    </div>
-  );
+const Task = ({ task}) => {
+  return <li>{task}</li>;
 };
 
 export default Task;
