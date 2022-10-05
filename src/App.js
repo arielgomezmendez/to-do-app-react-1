@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 import Form from "./components/Form/Form";
 import Task from "./components/Task/Task";
 import { useState } from "react";
