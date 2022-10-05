@@ -1,9 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import "./Button.css"
 
 const Button = ({ type, onClick, children }) => {
   return (
-    <div>
+    <div className="Button">
       <button children={children} onClick={onClick} type={type} />
     </div>
   );
