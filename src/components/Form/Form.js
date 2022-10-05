@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { useEffect } from "react";
+import "./Form.css"
 
 const Form = ({ task, setTask }) => {
   const [input, setInput] = useState("");
@@ -22,7 +23,7 @@ const Form = ({ task, setTask }) => {
   };
 
   return (
-    <div>
+    <div className="Form">
       <form>
         <input
           placeholder="task"
