@@ -1,0 +1,12 @@
+.Button{
+    
+    cursor:pointer;
+}
+.addTask{
+    color: blue;
+    height: 36%;
+    width: 26%;
+}
+.cleanAll{
+    color: red;
+}

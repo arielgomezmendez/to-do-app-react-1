@@ -3,6 +3,7 @@ import Form from "./components/Form/Form";
 import Task from "./components/Task/Task";
 import { useState } from "react";
 import Button from "./components/Button/Button";
+import "./components/Button/Button.css"
 
 function App() {
   const [task, setTask] = useState([]);
@@ -18,7 +19,7 @@ function App() {
       {task.map((task) => {
         return <Task task={task} setTask={setTask} key={task} />;
       })}
-      <Button children="Clean all" type="button" onClick={cleanAll} />
+      <Button  children="Clean all" type="button" onClick={cleanAll} typeButton="cleanAll"/>
     </div>
   );
 }
