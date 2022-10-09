@@ -1,9 +1,10 @@
 import React from "react";
 import Task from "../Task/Task";
+import "./TaskLis.css";
 
 const TaskLis = ({ task, setTask }) => {
   return(
-    <div>
+    <div className="tasklis">
       {
       task.map((task) => {
         return <Task task={task} setTask={setTask} key={task} />;
