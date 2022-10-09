@@ -1,16 +1,17 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ type, onClick, children,typeButton}) => {
+const Button = ({ type, onClick, children, buttontype }) => {
   return (
     <button
-      typeButton= {typeButton}
+      buttontype={buttontype}
       children={children}
       onClick={onClick}
       type={type}
       //dinamic changes of class
-      className={`${typeButton=="cleanAll" && 'cleanAll'} ${typeButton=="addTask" && 'addTask'}`}
-      
+      className={`${buttontype == "cleanAll" && "cleanAll"} ${
+        buttontype == "addTask" && "addTask"
+      }`}
     />
   );
 };

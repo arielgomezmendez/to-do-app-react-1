@@ -1,7 +1,7 @@
 import React from "react";
 import "./Task.css";
 
-const Task = ({ task }) => {
+const Task = ({ task, setTask }) => {
   return (
     <div className="task">
       <p>{task}</p>

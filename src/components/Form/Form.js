@@ -10,9 +10,11 @@ const Form = ({ task, setTask }) => {
   useEffect(() => {
     console.log(task);
   }, [task]);
+
   // Function to create the task
   const createTask = () => {
     if (input != "") {
+      //fill the array of task 
       setTask([...task, input]);
       setInput("");
     }
@@ -36,7 +38,7 @@ const Form = ({ task, setTask }) => {
         children="+"
         type="button"
         onClick={() => createTask()}
-        typeButton="addTask"
+        buttontype="addTask"
       />
     </form>
   );
