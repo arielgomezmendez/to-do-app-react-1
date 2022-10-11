@@ -1,11 +1,11 @@
 import React from "react";
 import "./Task.css";
 
-const Task = ({ task, setTask }) => {
+const Task = ({ task }) => {
   return (
     <div className="task">
       <p>{task}</p>
-      <span>X</span>
+      <span onClick={deleteTask}>X</span>
     </div>
   );
 };
