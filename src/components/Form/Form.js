@@ -27,16 +27,11 @@ const Form = ({ task, setTask }) => {
     setInput(e.target.value);
   };
 
-  //Function to delete th task
-  const deleteTask = () => {
-    console.log(task);
-  };
-
   return (
     <form className="Form">
       <input
         className="input"
-        placeholder="task"
+        placeholder="task..."
         required
         onChange={handleInput}
         value={input}
