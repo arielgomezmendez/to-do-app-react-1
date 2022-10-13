@@ -1,6 +1,5 @@
 import "./App.css";
 import Form from "./components/Form/Form";
-//import Task from "./components/Task/Task";
 import TaskLis from "./components/TaskList/TaskLis";
 import Button from "./components/Button/Button";
 import { useState } from "react";
