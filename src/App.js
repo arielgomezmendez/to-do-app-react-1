@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>TODO APP</h1>
+      <h1>TO DO APP</h1>
       <Form task={task} setTask={setTask} />
       <TaskLis task={task} setTask={setTask}/>
       {/*<Button  children="Clean all" type="button" onClick={cleanAll} buttontype="cleanAll"
