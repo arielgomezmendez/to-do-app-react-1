@@ -1,0 +1,61 @@
+/* From uiverse.io */
+.cleanAll {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   .cleanAll, .cleanAll span {
+    transition: 200ms;
+   }
+   
+   .cleanAll .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .cleanAll .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .cleanAll svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .cleanAll:hover {
+    background: #ff3636;
+   }
+   
+   .cleanAll:hover .text {
+    color: transparent;
+   }
+   
+   .cleanAll:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .cleanAll:focus {
+    outline: none;
+   }
+   
+   .cleanAll:active .icon svg {
+    transform: scale(0.8);
+   }
