@@ -2,9 +2,11 @@
     cursor:pointer;
 }
 .addTask{
-    color: blue;
+    color: white;
+    font-size: 18px;
     height: 36%;
     width: 16%;
     border-radius: 10px;
+    background-color: rgb(34, 212, 244);
 }
 
