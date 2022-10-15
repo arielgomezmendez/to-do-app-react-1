@@ -11,9 +11,15 @@
 
 .span-deleteTask{
    background-color: rgb(254, 157, 78) ;
-
+   min-height: 46%;
+   width: 10.5%;
+   border-radius: 6px;
+   
 }
 .delteIcon{
     transform: rotate(45deg);
     color: white;
+    text-align: center;
+    padding-top: 2px;
+    
 }
