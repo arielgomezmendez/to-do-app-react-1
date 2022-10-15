@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./Form.css";
+import { FaPlus } from "react-icons/fa";
 
 const Form = ({ task, setTask }) => {
   const [input, setInput] = useState("");
@@ -30,13 +31,13 @@ const Form = ({ task, setTask }) => {
     <form className="Form">
       <input
         className="input"
-        placeholder="task..."
+        placeholder="Add a task"
         required
         onChange={handleInput}
         value={input}
       ></input>
       <Button
-        children="+"
+        children={<FaPlus/>}
         type="button"
         onClick={() => createTask()}
         buttontype="addTask"
