@@ -11,8 +11,9 @@
 /*App title*/
 h1{
   color: white;
-  text-shadow: 4px 4px 4px rgb(137, 137, 138);
+  text-shadow: 3px 3px 2px rgb(137, 137, 138);
   font-weight:900;
+  
 }
 
 /*Container containg the main part of aplication*/
