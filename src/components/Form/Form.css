@@ -1,5 +1,5 @@
 .Form{
-    width: 80%;
+    width: 88%;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -10,4 +10,5 @@
     height: 30%;
     width: 76%;
     border-radius: 8px;
+    border: 1.4px solid rgba(34, 212, 244);
 }
