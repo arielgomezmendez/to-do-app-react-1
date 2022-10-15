@@ -4,9 +4,12 @@
 .addTask{
     color: white;
     font-size: 18px;
+    padding-top: 1%;
     height: 36%;
     width: 14%;
     border-radius: 10px;
     background-color: rgb(34, 212, 244);
+    border: none;
+    
 }
 

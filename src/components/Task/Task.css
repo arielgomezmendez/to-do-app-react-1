@@ -9,6 +9,11 @@
 
 }
 
-span{
-    color: orangered;
+.span-deleteTask{
+   background-color: rgb(254, 157, 78) ;
+
+}
+.delteIcon{
+    transform: rotate(45deg);
+    color: white;
 }
