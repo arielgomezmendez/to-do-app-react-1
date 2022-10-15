@@ -1,5 +1,5 @@
 .Form{
-    width: 38%;
+    width: 80%;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -8,6 +8,6 @@
 }
 .input{
     height: 30%;
-    border-radius: 6px;
-    background-color: gradient(blue red);
+    width: 76%;
+    border-radius: 8px;
 }

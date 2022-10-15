@@ -1,11 +1,10 @@
 .Button{
-    
     cursor:pointer;
 }
 .addTask{
     color: blue;
     height: 36%;
-    width: 26%;
-    border-radius: 6px;
+    width: 16%;
+    border-radius: 8px;
 }
 
