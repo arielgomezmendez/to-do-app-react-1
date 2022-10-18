@@ -7,4 +7,8 @@
     align-items: center;
     border-radius: 8px;
     justify-content: space-around ;
+    overflow-y: scroll;
+}
+.tasklis::-webkit-scrollbar{
+    width: 0 !important;
 }

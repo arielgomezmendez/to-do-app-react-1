@@ -1,6 +1,6 @@
 .Form{
     width: 88%;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
