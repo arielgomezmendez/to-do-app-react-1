@@ -21,7 +21,13 @@ const Form = ({ task, setTask }) => {
       setInput("");
     }
   };
-
+  //Function to save the tasks in the local storage of the browser
+  const taskInLocalStorage = ()=>{
+    localStorage.setItem("task", JSON.stringify(task));
+    const data = JSON.parse(localStorage.getItem("task"));
+    console.log("Aqui " + data);
+  }
+ 
   //Function to handle the value of input
   const handleInput = (e) => {
     setInput(e.target.value);
@@ -37,7 +43,7 @@ const Form = ({ task, setTask }) => {
         value={input}
       ></input>
       <Button
-        children={<FaPlus/>}
+        children={<FaPlus />}
         type="button"
         onClick={() => createTask()}
         buttontype="addTask"
