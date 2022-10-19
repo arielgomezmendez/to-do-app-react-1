@@ -10,7 +10,7 @@ const Form = ({ task, setTask }) => {
 
   // Use the useEffect hook to show in console the task added
   useEffect(() => {
-    console.log(task);
+    //console.log(task);
   }, [task]);
 
   // Function to create the task
@@ -21,13 +21,20 @@ const Form = ({ task, setTask }) => {
       setInput("");
     }
   };
-  //Function to save the tasks in the local storage of the browser
-  const taskInLocalStorage = ()=>{
+
+  //Save tasks in localstorage
+  useEffect(() => {
     localStorage.setItem("task", JSON.stringify(task));
-    const data = JSON.parse(localStorage.getItem("task"));
-    console.log("Aqui " + data);
-  }
- 
+  }, [task]);
+
+  useEffect(() => {
+    let data = JSON.parse(localStorage.getItem("task"));
+    if(data){
+      setTask(data)
+      console.log("aqui" + data)
+    }
+  }, []);
+
   //Function to handle the value of input
   const handleInput = (e) => {
     setInput(e.target.value);
