@@ -6,7 +6,7 @@ import { useState } from "react";
 import ButtonCustomDelete from "./components/ButtonCustomDelete/ButtonCustomDelete";
 
 function App() {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(JSON.parse(localStorage.getItem("task")));
   //Clean all tasks
   const cleanAll = () => {
     setTask([]);
