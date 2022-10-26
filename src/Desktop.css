@@ -1,3 +1,16 @@
 @media screen and (min-width: 900px) {
-    
+    .App {
+        background-size: 100%;
+      }
+
+    h1 {
+        font-size: 66px;
+        text-shadow: 3px 4px 2px rgb(137, 137, 138);
+      }
+      .mainContainer {
+        margin-top: 4%;
+      }
+      .Form{
+       
+    }
 }
